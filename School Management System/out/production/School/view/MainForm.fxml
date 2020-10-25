@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="602.0" prefWidth="1257.0" style="-fx-background-color: Black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainFormController">
+   <children>
+      <Pane layoutX="14.0" layoutY="14.0" prefHeight="59.0" prefWidth="234.0" style="-fx-background-color: green;">
+         <children>
+            <Text layoutX="7.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wisdom International School" wrappingWidth="220.13671875">
+               <font>
+                  <Font name="Calibri Bold Italic" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="14.0" layoutY="82.0" prefHeight="503.0" prefWidth="234.0" style="-fx-background-color: grey;">
+         <children>
+            <JFXButton layoutX="34.0" layoutY="197.0" onAction="#InfoOnAction" prefHeight="29.0" prefWidth="167.0" style="-fx-background-color: Blue;" text="SCHOOL INFORMATION" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="txtStudentM" layoutX="34.0" layoutY="239.0" onAction="#studentMOnAction" prefHeight="29.0" prefWidth="167.0" style="-fx-background-color: Blue;" text="STUDENT MANAGEMENT" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnStaffM" layoutX="34.0" layoutY="283.0" onAction="#staffManagementOnAction" prefHeight="29.0" prefWidth="167.0" style="-fx-background-color: Blue;" text="STAFF MANAGEMENT" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnSubject" layoutX="34.0" layoutY="326.0" onAction="#subjectsOnAction" prefHeight="29.0" prefWidth="167.0" style="-fx-background-color: Blue;" text="SUBJECTS" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnAttendance" layoutX="34.0" layoutY="368.0" onAction="#AttendanceOnAction" prefHeight="29.0" prefWidth="167.0" style="-fx-background-color: Blue;" text="ATTENDANCE" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnLogout" layoutX="34.0" layoutY="453.0" onAction="#logOutOnAction" prefHeight="29.0" prefWidth="167.0" style="-fx-background-color: Blue;" text="LOGOUT" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnHome" layoutX="34.0" layoutY="156.0" onAction="#homeOnAction" prefHeight="29.0" prefWidth="167.0" style="-fx-background-color: Blue;" text="HOME" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="127.0" fitWidth="133.0" layoutX="54.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/images.jpeg" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnAdmin" layoutX="34.0" layoutY="411.0" onAction="#adminOnAction" prefHeight="29.0" prefWidth="167.0" style="-fx-background-color: Blue;" text="ADMINISTRATOR" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <AnchorPane fx:id="root" layoutX="259.0" layoutY="14.0" prefHeight="574.0" prefWidth="988.0" style="-fx-background-color: Grey;" />
+   </children>
+</AnchorPane>

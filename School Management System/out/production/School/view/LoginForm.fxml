@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="543.0" prefWidth="624.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
+   <children>
+      <Text fill="#141414" layoutX="118.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WISDOM INTERNATIONAL SCHOOL" wrappingWidth="404.13671875">
+         <font>
+            <Font name="Cambria Math" size="26.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="txtxUsername" labelFloat="true" layoutX="175.0" layoutY="298.0" prefHeight="25.0" prefWidth="274.0" promptText="User_Name" unFocusColor="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="loginbtn" layoutX="252.0" layoutY="451.0" onAction="#LoginOnAction" prefHeight="30.0" prefWidth="121.0" style="-fx-background-color: Blue;" text="LOGIN" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="150.0" fitWidth="154.0" layoutX="239.0" layoutY="93.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/admin-icon.png" />
+         </image>
+      </ImageView>
+      <JFXPasswordField fx:id="txtpsswd" labelFloat="true" layoutX="175.0" layoutY="346.0" prefHeight="25.0" prefWidth="274.0" promptText="Password" unFocusColor="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXPasswordField>
+      <JFXButton fx:id="btnForgetPwd" layoutX="252.0" layoutY="489.0" prefHeight="12.0" prefWidth="121.0" text="Forget Password?" underline="true">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

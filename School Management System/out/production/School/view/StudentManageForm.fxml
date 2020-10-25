@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="574.0" prefWidth="987.0" style="-fx-background-color: Grey;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StudentManageFormController">
+   <children>
+      <Separator layoutX="1.0" layoutY="82.0" prefHeight="7.0" prefWidth="988.0" />
+      <Pane layoutX="-1.0" layoutY="1.0" prefHeight="79.0" prefWidth="989.0">
+         <children>
+            <Text fill="WHITE" layoutX="358.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MANAGE STUDENTS" wrappingWidth="236.13671875">
+               <font>
+                  <Font name="Cambria Math" size="26.0" />
+               </font>
+            </Text>
+            <JFXButton layoutX="21.0" layoutY="9.0" prefHeight="60.0" prefWidth="59.0" text=" ">
+               <graphic>
+                  <ImageView fitHeight="60.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asserts/icons8_Back_48px_3.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </Pane>
+      <JFXTextField fx:id="txtFullName" focusColor="WHITE" labelFloat="true" layoutX="339.0" layoutY="172.0" prefHeight="26.0" prefWidth="251.0" promptText="Full Name">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="txtNameIni" focusColor="WHITE" labelFloat="true" layoutX="339.0" layoutY="222.0" prefHeight="26.0" prefWidth="251.0" promptText="Name With Initials">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="txtAddress" focusColor="WHITE" labelFloat="true" layoutX="339.0" layoutY="267.0" prefHeight="26.0" prefWidth="251.0" promptText="Address">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="txtDOB" focusColor="WHITE" labelFloat="true" layoutX="339.0" layoutY="314.0" prefHeight="26.0" prefWidth="251.0" promptText="Date Of Birth">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXTextField>
+      <JFXComboBox fx:id="txtGrade" editable="true" focusColor="WHITE" labelFloat="true" layoutX="339.0" layoutY="450.0" prefHeight="25.0" prefWidth="251.0" promptText="Grade">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXComboBox>
+      <JFXTextField fx:id="txtNic" focusColor="WHITE" labelFloat="true" layoutX="339.0" layoutY="358.0" prefHeight="26.0" prefWidth="251.0" promptText="NIC Number">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="txtDOA" focusColor="WHITE" labelFloat="true" layoutX="339.0" layoutY="400.0" prefHeight="26.0" prefWidth="251.0" promptText="Date Of Admission">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="txtRegNo" labelFloat="true" layoutX="275.0" layoutY="118.0" prefHeight="25.0" prefWidth="377.0" promptText="Search">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXTextField>
+      <JFXButton fx:id="btnUpdate" layoutX="322.0" layoutY="520.0" onAction="#UpdateOnAction" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: Blue;" text="UPDATE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="btnDelete" layoutX="423.0" layoutY="520.0" onAction="#deleteOnAction" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: Blue;" text="DELETE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="btnPrint" layoutX="525.0" layoutY="520.0" onAction="#printOnAction" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: Blue;" text="PRINT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="btnSearch" layoutX="671.0" layoutY="118.0" onAction="#searchOnAction" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: Blue;" text="SEARCH" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></JFXButton>
+   </children>
+</AnchorPane>

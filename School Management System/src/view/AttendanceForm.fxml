@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="574.0" prefWidth="987.0" style="-fx-background-color: Grey;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AttendanceFormController">
+   <children>
+      <Separator layoutY="82.0" prefHeight="5.0" prefWidth="987.0" />
+      <Pane layoutY="2.0" prefHeight="79.0" prefWidth="987.0">
+         <children>
+            <Text fill="WHITE" layoutX="412.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ATTENDANCE" wrappingWidth="163.13671875">
+               <font>
+                  <Font name="Cambria Math" size="26.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <JFXTextField fx:id="txtSDate" focusColor="WHITE" labelFloat="true" layoutX="170.0" layoutY="110.0" prefHeight="25.0" prefWidth="173.0" promptText="Date" unFocusColor="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXTextField>
+      <JFXButton fx:id="btnSPresent" layoutX="360.0" layoutY="110.0" onAction="#sPresentOnAction" style="-fx-background-color: Blue;" text="Present" textFill="WHITE" />
+      <JFXButton fx:id="btnSAbsent" layoutX="422.0" layoutY="110.0" onAction="#sAbsentOnAction" style="-fx-background-color: Blue;" text="Absent" textFill="WHITE" />
+      <JFXTextField fx:id="txtTReg_No" focusColor="WHITE" labelFloat="true" layoutX="509.0" layoutY="110.0" prefHeight="25.0" prefWidth="131.0" promptText="Teacher Reg. No." unFocusColor="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="txtTDate" focusColor="WHITE" labelFloat="true" layoutX="658.0" layoutY="110.0" prefHeight="25.0" prefWidth="173.0" promptText="Date" unFocusColor="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXTextField>
+      <JFXButton fx:id="btnTPresent" layoutX="849.0" layoutY="110.0" onAction="#tPresentOnAction" style="-fx-background-color: Blue;" text="Present" textFill="WHITE" />
+      <JFXButton fx:id="btntAbsent" layoutX="913.0" layoutY="110.0" onAction="#tAbsentOnAction" style="-fx-background-color: Blue;" text="Absent" textFill="WHITE" />
+      <JFXTextField fx:id="txtSReg_No" focusColor="WHITE" labelFloat="true" layoutX="22.0" layoutY="110.0" prefHeight="25.0" prefWidth="131.0" promptText="Student Reg. No." unFocusColor="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXTextField>
+      <TableView layoutX="22.0" layoutY="164.0" prefHeight="400.0" prefWidth="453.0">
+        <columns>
+          <TableColumn prefWidth="55.0" text="#" />
+          <TableColumn fx:id="tblSReg_No" prefWidth="151.0" text="Student Registration No." />
+            <TableColumn fx:id="tblSDate" prefWidth="124.0" text="Date" />
+            <TableColumn fx:id="tblSStatus" prefWidth="134.0" text="Status" />
+        </columns>
+      </TableView>
+      <TableView layoutX="509.0" layoutY="164.0" prefHeight="400.0" prefWidth="460.0">
+        <columns>
+          <TableColumn prefWidth="54.0" text="#" />
+          <TableColumn fx:id="tblTReg_No" prefWidth="157.0" text="Teacher Registration No." />
+            <TableColumn fx:id="tblTDate" prefWidth="120.0" text="Date" />
+            <TableColumn fx:id="tblTStatus" prefWidth="127.0" text="Status" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

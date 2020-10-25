@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<AnchorPane prefHeight="574.0" prefWidth="987.0" style="-fx-background-color: Grey;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RegisterTeacherFormController">
+   <children>
+      <Separator layoutX="-1.0" layoutY="87.0" prefHeight="0.0" prefWidth="987.0" />
+      <Pane layoutX="-1.0" prefHeight="87.0" prefWidth="987.0">
+         <children>
+            <Text fill="WHITE" layoutX="347.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TEACHER REGISTRATION" wrappingWidth="293.13671875">
+               <font>
+                  <Font name="Cambria Math" size="26.0" />
+               </font>
+            </Text>
+            <JFXButton layoutX="22.0" layoutY="17.0" prefHeight="51.0" prefWidth="52.0" text=" ">
+               <graphic>
+                  <ImageView fitHeight="51.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asserts/icons8_Back_48px_3.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </Pane>
+      <JFXTextField fx:id="txtRegNo" focusColor="WHITE" labelFloat="true" layoutX="359.0" layoutY="122.0" prefHeight="26.0" prefWidth="251.0" promptText="Registration No.">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="txtFullName" focusColor="WHITE" labelFloat="true" layoutX="360.0" layoutY="167.0" prefHeight="26.0" prefWidth="251.0" promptText="Full Name">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="txtNameIni" focusColor="WHITE" labelFloat="true" layoutX="360.0" layoutY="209.0" prefHeight="26.0" prefWidth="251.0" promptText="Name With Initials">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="txtAddress" focusColor="WHITE" labelFloat="true" layoutX="360.0" layoutY="251.0" prefHeight="26.0" prefWidth="251.0" promptText="Address">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="txtDob" focusColor="WHITE" labelFloat="true" layoutX="360.0" layoutY="297.0" prefHeight="26.0" prefWidth="251.0" promptText="Date Of Birth">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXTextField>
+      <JFXButton fx:id="btnRegister" layoutX="428.0" layoutY="496.0" onAction="#tRegisterOnAction" prefHeight="37.0" prefWidth="113.0" style="-fx-background-color: Blue;" text="REGISTER">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXTextField fx:id="txtNic" focusColor="WHITE" labelFloat="true" layoutX="360.0" layoutY="341.0" prefHeight="26.0" prefWidth="251.0" promptText="NIC Number">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="txtClass" focusColor="WHITE" labelFloat="true" layoutX="359.0" layoutY="383.0" prefHeight="26.0" prefWidth="251.0" promptText="Class">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXTextField>
+      <JFXComboBox fx:id="txtSubject" editable="true" focusColor="WHITE" labelFloat="true" layoutX="360.0" layoutY="428.0" prefHeight="25.0" prefWidth="251.0" promptText="Subject">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXComboBox>
+   </children>
+</AnchorPane>

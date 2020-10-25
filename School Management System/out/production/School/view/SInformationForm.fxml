@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="574.0" prefWidth="987.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SInformationFormController">
+   <children>
+      <Separator layoutY="83.0" prefHeight="13.0" prefWidth="987.0" />
+      <JFXTextField fx:id="txtNameOfSchool" focusColor="#f8f8f8" labelFloat="true" layoutX="338.0" layoutY="139.0" prefHeight="31.0" prefWidth="295.0" promptText="Name Of School" unFocusColor="#4d4d4d">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="txtAddressSchool" focusColor="#f8f8f8" labelFloat="true" layoutX="338.0" layoutY="187.0" prefHeight="31.0" prefWidth="295.0" promptText="Address" unFocusColor="#4d4d4d">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="txtZone" focusColor="#f8f8f8" labelFloat="true" layoutX="338.0" layoutY="238.0" prefHeight="31.0" prefWidth="295.0" promptText="Educational Zone" unFocusColor="#4d4d4d">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="txtAdDistrict" focusColor="#f8f8f8" labelFloat="true" layoutX="338.0" layoutY="338.0" prefHeight="31.0" prefWidth="295.0" promptText="Administrative District" unFocusColor="#4d4d4d">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="txtProvinceSchool" focusColor="#f8f8f8" labelFloat="true" layoutX="338.0" layoutY="287.0" prefHeight="31.0" prefWidth="295.0" promptText="Province" unFocusColor="#4d4d4d">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="txtPrincipleName" focusColor="#f8f8f8" labelFloat="true" layoutX="338.0" layoutY="389.0" prefHeight="31.0" prefWidth="295.0" promptText="Name Of Principle" unFocusColor="#4d4d4d">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="txtPrincipleC" focusColor="#f8f8f8" labelFloat="true" layoutX="338.0" layoutY="439.0" prefHeight="31.0" prefWidth="295.0" promptText="Principal Contact No" unFocusColor="#4d4d4d">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXTextField>
+      <JFXButton fx:id="btnInfoUpdate" layoutX="338.0" layoutY="511.0" onAction="#updateOnAction" prefHeight="31.0" prefWidth="146.0" style="-fx-background-color: Blue;" text="UPDATE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <Pane prefHeight="83.0" prefWidth="987.0">
+         <children>
+            <Label layoutX="350.0" layoutY="14.0" prefHeight="55.0" prefWidth="274.0" text="SCHOOL INFORMATION" textFill="#fcf8f8">
+               <font>
+                  <Font name="Cambria Math" size="26.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="23.0" layoutY="14.0" prefHeight="55.0" prefWidth="51.0" text=" ">
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asserts/icons8_Back_48px_3.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </Pane>
+      <JFXButton fx:id="btnPrintInfo" layoutX="494.0" layoutY="511.0" onAction="#printOnAction" prefHeight="31.0" prefWidth="146.0" style="-fx-background-color: Blue;" text="PRINT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

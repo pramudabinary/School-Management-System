@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root2" prefHeight="574.0" prefWidth="987.0" style="-fx-background-color: Grey;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StudentManagementFormController">
+   <children>
+      <Separator layoutY="84.0" prefHeight="4.0" prefWidth="986.0" />
+      <Pane layoutY="-1.0" prefHeight="83.0" prefWidth="986.0">
+         <children>
+            <Text fill="WHITE" layoutX="345.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STUDENT MANAGEMENT" wrappingWidth="296.13671875">
+               <font>
+                  <Font name="Cambria Math" size="26.0" />
+               </font>
+            </Text>
+            <JFXButton layoutX="22.0" layoutY="11.0" prefHeight="60.0" prefWidth="63.0" text=" ">
+               <graphic>
+                  <ImageView fitHeight="60.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asserts/icons8_Back_48px_3.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </Pane>
+      <JFXButton fx:id="txtSRegister" layoutX="324.0" layoutY="315.0" onAction="#SRegisterOnAction" prefHeight="34.0" prefWidth="313.0" style="-fx-background-color: Blue;" text="REGISTER STUDENT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnSManage" layoutX="324.0" layoutY="373.0" onAction="#SManageOnAction" prefHeight="34.0" prefWidth="313.0" style="-fx-background-color: Blue;" text="MANAGE STUDENT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnSView" layoutX="324.0" layoutY="433.0" onAction="#sViewOnAction" prefHeight="34.0" prefWidth="313.0" style="-fx-background-color: Blue;" text="VIEW STUDENTS" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnSPrint" layoutX="324.0" layoutY="490.0" onAction="#sPrintOnAction" prefHeight="34.0" prefWidth="313.0" style="-fx-background-color: Blue;" text="PRINT STUDENTS" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="406.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/35778-200.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
